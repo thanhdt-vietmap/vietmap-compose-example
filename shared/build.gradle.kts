@@ -4,7 +4,8 @@ plugins {
     id(libs.plugins.kotlinMultiplatform.get().pluginId)
     id(libs.plugins.kotlinCocoapods.get().pluginId)
     id(libs.plugins.androidLibrary.get().pluginId)
-
+    id(libs.plugins.compose.jetbrains.get().pluginId) version "1.7.3"
+    id(libs.plugins.kotlin.serialization.get().pluginId) version "2.1.20"
     id(libs.plugins.compose.compiler.get().pluginId)
 }
 
@@ -56,7 +57,7 @@ kotlin {
 
 android {
     namespace = "vn.vietmap.vietmapkmmsdktest"
-    compileSdk = 34
+    compileSdk = 35
     defaultConfig {
         minSdk = 24
     }
