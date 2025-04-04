@@ -1,0 +1,23 @@
+PODS:
+  - shared (1.0):
+    - VietMap (= 2.0.0)
+  - VietMap (2.0.0)
+
+DEPENDENCIES:
+  - shared (from `../shared`)
+
+SPEC REPOS:
+  trunk:
+    - VietMap
+
+EXTERNAL SOURCES:
+  shared:
+    :path: "../shared"
+
+SPEC CHECKSUMS:
+  shared: e0a85db48f4617087ea6c7ad6984891a8750891a
+  VietMap: 1fc4a1e27896a19bc8b8a62e2227b1e0116a698d
+
+PODFILE CHECKSUM: 78d6cc1b71b232202c48a29d4e6c34972c534c73
+
+COCOAPODS: 1.16.2

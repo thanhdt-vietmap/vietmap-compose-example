@@ -1,0 +1,5 @@
+framework module VietMap {
+  umbrella header "VietMap.h"
+  export *
+  module * { export * }
+}
