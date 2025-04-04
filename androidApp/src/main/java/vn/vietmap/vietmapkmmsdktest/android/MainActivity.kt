@@ -8,8 +8,6 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import vn.vietmap.vietmapkmmsdktest.DemoApp
-import vn.vietmap.vietmapkmmsdktest.Greeting
 import vn.vietmap.vietmapkmmsdktest.VietMapCommon
 
 class MainActivity : ComponentActivity() {
@@ -17,8 +15,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyApplicationTheme {
-//                DemoApp()
-            GreetingView(modifier = Modifier.fillMaxSize())
+                GreetingView()
             }
 
         }
@@ -26,20 +23,6 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun GreetingView(modifier: Modifier) {
+fun GreetingView() {
     VietMapCommon()
-}
-
-
-@Composable
-fun VietMapView(){
-    Text(text = "Hello Android")
-}
-
-@Preview
-@Composable
-fun DefaultPreview() {
-    MyApplicationTheme {
-//        GreetingView("Hello, Android!")
-    }
 }
